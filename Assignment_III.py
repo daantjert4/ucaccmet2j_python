@@ -29,7 +29,7 @@ for month in monthslist:
 print(total_monthly_rain) #this is the list of monthly rain values in Seattle
 print(sum(total_monthly_rain)) #shows the total of rain again (like part1), proves both parts are correct
  
-with open('output_1-2', 'w') as file:
+with open('output_1-2.json', 'w') as file:
     json.dump(
             {'parts 1 and 2':{'total_rain_Seattle': yearrain, 'rain_Seattle_months': total_monthly_rain}},
             file)
